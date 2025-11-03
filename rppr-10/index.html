@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Kit Documentation</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" class="navbar__brand">UI Kit</a>
+        <nav>
+            <button class="navbar__toggle">☰</button>
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="#buttons" class="navbar__link">Кнопки</a></li>
+                <li class="navbar__item"><a href="#inputs" class="navbar__link">Поля ввода</a></li>
+                <li class="navbar__item"><a href="#cards" class="navbar__link">Карточки</a></li>
+                <li class="navbar__item"><a href="#navigation" class="navbar__link">Навигация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="buttons">
+            <h1>Кнопки</h1>
+            <div class="grid">
+                <div class="grid__item">
+                    <h3>Primary кнопки</h3>
+                    <button class="button button--primary button--small">Маленькая</button>
+                    <button class="button button--primary">Средняя</button>
+                    <button class="button button--primary button--large">Большая</button>
+                </div>
+                <div class="grid__item">
+                    <h3>Secondary кнопки</h3>
+                    <button class="button button--secondary button--small">Маленькая</button>
+                    <button class="button button--secondary">Средняя</button>
+                    <button class="button button--secondary button--large">Большая</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="cards">
+            <h1>Карточки</h1>
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="card card--small">
+                        <img src="assets/images/example.jpg" alt="Пример" class="card__image">
+                        <div class="card__content">
+                            <h3 class="card__title">Маленькая карточка</h3>
+                            <p class="card__text">Описание карточки</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__content">
+                            <h3 class="card__title">Карточка без изображения</h3>
+                            <p class="card__text">Описание карточки</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
